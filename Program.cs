@@ -32,3 +32,29 @@
 
 // }
 // ShowNumbers(m,n);
+
+// 2.  Напишите программу вычисления функции Аккермана с помощью рекурсии.
+//  Даны два неотрицательных числа m и n.
+
+// System.Console.WriteLine("Введите число M: ");
+// int m = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("Введите число N: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+
+
+// int AckermanFunction(int m,int n)
+// {
+// if(m==0)
+// {
+//     return n +1;
+// }
+// if(n == 0)
+// {
+//     return AckermanFunction(m-1,1);
+// }
+// return AckermanFunction(m-1,AckermanFunction(m,n-1));
+
+
+// }
+// int resultAckerman=AckermanFunction(m,n);
+// System.Console.WriteLine($"Результат функции Аккермана для чисел {m}, {n} : {resultAckerman}");
