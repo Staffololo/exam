@@ -58,3 +58,24 @@
 // }
 // int resultAckerman=AckermanFunction(m,n);
 // System.Console.WriteLine($"Результат функции Аккермана для чисел {m}, {n} : {resultAckerman}");
+
+
+// 3. Задайте произвольный массив. Выведете его элементы, начиная с конца. 
+// Использовать рекурсию, не использовать циклы.
+
+int[] array={5,4,7,3,2,33,76,25,13};
+int i=array.Length-1;
+void Showarray(int[]array,int i)
+{
+    
+    if(array[i]==array[0])
+    {
+      System.Console.Write(array[0]);
+      return;
+    }
+    System.Console.Write(array[i]+" ");
+    Showarray(array,i-1);
+
+}
+System.Console.WriteLine($"Массив до разворота: {string.Join(" ",array)}");
+System.Console.Write("После разворота: "); Showarray(array,i);
